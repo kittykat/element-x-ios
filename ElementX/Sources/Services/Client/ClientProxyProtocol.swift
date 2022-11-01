@@ -58,7 +58,6 @@ enum PushFormat {
     }
 }
 
-@MainActor
 protocol ClientProxyProtocol: MediaProxyProtocol {
     var callbacks: PassthroughSubject<ClientProxyCallback, Never> { get }
     
